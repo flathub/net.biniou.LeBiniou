@@ -62,16 +62,12 @@ modules:
       - ./waf configure --prefix=$FLATPAK_DEST
       - ./waf install
   - name: lebiniou-data
-    buildsystem: simple
+    buildsystem: autotools
     sources:
        - type: git
          url: https://gitlab.com/lebiniou/lebiniou-data.git
-         tag: version-3.50
-         commit: f4b03c90b838c4b84ab2cd56348dedf724e653b2
-    build-commands:
-      - autoreconf -i
-      - ./configure --prefix=$FLATPAK_DEST
-      - make -j $FLATPAK_BUILDER_N_JOBS install
+         tag: version-3.50.1
+         commit: bf845a1846a8fe247368d42bafd8435c7cc51fd6
   - name: lebiniou
     buildsystem: simple
     sources:
