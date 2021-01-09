@@ -63,6 +63,16 @@ modules:
         sha256: 06c4363486e1053e69bb3fa211374bdaed4baa678ca8ccd1f38731f0da2d3497
   - name: jackaudio
     buildsystem: simple
+    config-opts:
+      - --iio=no
+      - --portaudio=no
+      - --winmme=no
+      - --celt=no
+      - --opus=no
+      - --samplerate=no
+      - --sndfile=no
+      - --readline=no
+      - --db=no
     sources:
       - type: archive
         url: https://github.com/jackaudio/jack2/archive/v1.9.16.tar.gz
