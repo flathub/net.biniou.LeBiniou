@@ -89,8 +89,10 @@ modules:
          commit: bf845a1846a8fe247368d42bafd8435c7cc51fd6
   - name: lebiniou
     buildsystem: autotools
+    config-opts:
+      - --enable-flatpak
     sources:
        - type: git
          url: https://gitlab.com/lebiniou/lebiniou.git
-         tag: version-3.52.0
-         commit: 11f5635e562da39eb9f4f1e12f4297d6e1bfd8a9
+         tag: version-3.53.0-RC1
+         commit: 4d03d038b1f863bfc6445edd252345a3e2017934
