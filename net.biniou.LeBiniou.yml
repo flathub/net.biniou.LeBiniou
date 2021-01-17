@@ -88,7 +88,7 @@ modules:
        - type: git
          url: https://gitlab.com/lebiniou/lebiniou-data.git
          tag: version-3.53.0
-         commit: ee89fc40b5ff96ec0fea71de9cf3c8cabdd7c8f2
+         commit: 780a76b5c4559ba597ceea19a408daf3a0153c31
   - name: lebiniou
     buildsystem: autotools
     config-opts:
