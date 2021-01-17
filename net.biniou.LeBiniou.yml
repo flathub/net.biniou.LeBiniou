@@ -96,5 +96,5 @@ modules:
     sources:
        - type: git
          url: https://gitlab.com/lebiniou/lebiniou.git
-         tag: version-3.53.0-RC3
-         commit: d5b5bca53795a39e7ec993706dc0b4ad5238a95c
+         tag: version-3.53.0
+         commit: 73c3a4ea78663f01bd97b785e22179ca90dfa62a
