@@ -85,16 +85,16 @@ modules:
     config-opts:
       - --enable-flatpak
     sources:
-       - type: git
-         url: https://gitlab.com/lebiniou/lebiniou-data.git
-         tag: version-3.53.1
-         commit: e57070fdddce57dbffc63727fa732c71b86140e3
+      - type: git
+        url: https://gitlab.com/lebiniou/lebiniou-data.git
+        tag: version-3.53.2
+        commit: af11b60fd9e44bbf017f96f3d0b72f2d6eca3322
   - name: lebiniou
     buildsystem: autotools
     config-opts:
       - --enable-flatpak
     sources:
-       - type: git
-         url: https://gitlab.com/lebiniou/lebiniou.git
-         tag: version-3.53.1
-         commit: 6454bfce2c6055417dccc5cb7a4363e07dcd92a9
+      - type: git
+        url: https://gitlab.com/lebiniou/lebiniou.git
+        tag: version-3.53.2
+        commit: f7dd54f0fdcc5276456ce3d4caa577e36529c7c7
