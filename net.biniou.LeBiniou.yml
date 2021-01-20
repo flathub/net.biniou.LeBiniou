@@ -97,4 +97,4 @@ modules:
        - type: git
          url: https://gitlab.com/lebiniou/lebiniou.git
          tag: version-3.53.1
-         commit: 92435adc6ca91c2dd0c58099cc34570e43bfa71c
+         commit: 6454bfce2c6055417dccc5cb7a4363e07dcd92a9
