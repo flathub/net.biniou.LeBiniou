@@ -99,6 +99,6 @@ modules:
     test-commands:
       - export AUTOPKGTEST_TMP=/tmp
       - export PREFIX=/app
-      - cp /app/share/lebiniou/test/lebiniou-test.sh /tmp
-      - chmod +x /tmp/lebiniou-test.sh
-      - /tmp/lebiniou-test.sh
+      - cp /app/share/lebiniou/test/lebiniou-test.sh .
+      - chmod +x lebiniou-test.sh
+      - ./lebiniou-test.sh
