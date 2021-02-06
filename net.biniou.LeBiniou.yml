@@ -98,4 +98,4 @@ modules:
     test-rule:
     test-commands:
       - export AUTOPKGTEST_TMP=/tmp
-      - /app/share/lebiniou/test/lebiniou-test.sh
+      - sh /app/share/lebiniou/test/lebiniou-test.sh
