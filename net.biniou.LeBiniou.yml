@@ -82,13 +82,10 @@ modules:
       - ./waf install
   - name: lebiniou-data
     buildsystem: autotools
-    config-opts:
-      - --enable-flatpak
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou-data.git
-        tag: version-3.54.0
-        commit: 45124fe94a789a36441e7c5d018eedab6876e652
+        branch: version-3.54.1
   - name: lebiniou
     buildsystem: autotools
     config-opts:
@@ -96,5 +93,9 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        tag: version-3.53.3
-        commit: a170b3e46eee22a46750b3b6348ba0130ab79224
+        branch: json_config
+    run-tests: true
+    test-rule:
+    test-commands:
+      - export AUTOPKGTEST_TMP=/tmp
+      - /app/share/lebiniou/test/lebiniou-test.sh
