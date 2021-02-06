@@ -119,8 +119,6 @@ modules:
         sha256: 9381dc5949449e62ceacbe776af09d560b3a7e3e2bb69cad60d9cb85bc0eb702
   - name: lebiniou-data
     buildsystem: autotools
-    config-opts:
-      - --enable-flatpak
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou-data.git
