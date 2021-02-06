@@ -130,4 +130,16 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
+<<<<<<< HEAD
         branch: version-3.56.0
+=======
+        branch: json_config
+    run-tests: true
+    test-rule:
+    test-commands:
+      - export AUTOPKGTEST_TMP=/tmp
+      - export PREFIX=/app
+      - cp /app/share/lebiniou/test/lebiniou-test.sh .
+      - chmod +x lebiniou-test.sh
+      - ./lebiniou-test.sh flatpak
+>>>>>>> 8e93782 (Use new script)
