@@ -96,4 +96,4 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        branch: json_config
+        tag: test-3.54.1-14
