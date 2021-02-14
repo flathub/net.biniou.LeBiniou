@@ -118,9 +118,8 @@ modules:
     buildsystem: autotools
     config-opts:
       - --enable-flatpak
-      - --without-uglifyjs
-      - --without-cleancss
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        branch: json_config
+        tag: version-3.54.0
+        commit: ae0da87be946c8afa1f677df8ad281cb61634980
