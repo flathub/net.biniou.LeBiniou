@@ -20,6 +20,10 @@ cleanup:
   - "*.la"
   - /include
   - /lib/pkgconfig
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.node14
+build-options:
+  append-path: /usr/lib/sdk/node14/bin
 modules:
   - name: microhttpd
     buildsystem: autotools
@@ -85,6 +89,22 @@ modules:
     build-commands:
       - ./waf configure --prefix=$FLATPAK_DEST
       - ./waf install
+  - name: node-modules
+    build-options:
+      env:
+        npm_config_nodedir: /usr/lib/sdk/node14
+        npm_config_cache: /run/build/node-modules/flatpak-node/npm-cache
+    buildsystem: simple
+    build-commands:
+      - npm install --offline -g --prefix=/app uglify-js@3.12.8 clean-css-cli@5.1.0
+    sources:
+      - type: file
+        # Needed to generate flatpak sources, not needed at build time. Produced by
+        # npm install --package-lock-only uglify-js@3.12.8 clean-css-cli@5.1.0
+        path: package-lock.json
+        # Produced by
+        # ../flatpak-builder-tools/node/flatpak-node-generator.py npm package-lock.json
+      - generated-sources.json
   - name: lebiniou-data
     buildsystem: autotools
     config-opts:
