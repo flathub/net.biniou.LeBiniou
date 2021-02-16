@@ -121,5 +121,5 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        tag: version-3.54.0
-        commit: ae0da87be946c8afa1f677df8ad281cb61634980
+        tag: version-3.54.1
+        commit: 6a0c5d1e9ccca9765f0fcd07309c0c8bc0febcb4
