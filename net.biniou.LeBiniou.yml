@@ -118,8 +118,9 @@ modules:
     buildsystem: autotools
     config-opts:
       - --enable-flatpak
+      - --without-htmlmin
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
         branch: version-3.55.0
-        commit: dd3fd976ce7d695ac093aed056126baae586fbab
+        commit: 126698320bebf6f26ee1dc915cebbeda7c562f3b
