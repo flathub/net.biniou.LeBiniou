@@ -105,6 +105,14 @@ modules:
         # Produced by
         # ../flatpak-builder-tools/node/flatpak-node-generator.py npm package-lock.json
       - generated-sources.json
+  - name: htmlmin
+    buildsystem: simple
+    build-commands:
+      - pip3 install --prefix=/app --no-deps .
+    sources:
+      - type: archive
+        url: https://files.pythonhosted.org/packages/b3/e7/fcd59e12169de19f0131ff2812077f964c6b960e7c09804d30a7bf2ab461/htmlmin-0.1.12.tar.gz
+        sha256: 50c1ef4630374a5d723900096a961cff426dff46b48f34d194a81bbe14eca178
   - name: lebiniou-data
     buildsystem: autotools
     config-opts:
@@ -118,9 +126,8 @@ modules:
     buildsystem: autotools
     config-opts:
       - --enable-flatpak
-      - --without-htmlmin
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
         branch: version-3.55.0
-        commit: 126698320bebf6f26ee1dc915cebbeda7c562f3b
+#        commit:
