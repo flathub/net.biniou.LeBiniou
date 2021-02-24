@@ -129,4 +129,3 @@ modules:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
         branch: dev-plugins_screen
-        commit: 90221b12ca4b65a749a801c7797a580e4263b078
