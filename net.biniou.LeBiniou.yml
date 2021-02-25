@@ -136,5 +136,5 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        branch: dev-plugins_screen
+        branch: version-3.55.0
 #        commit:
