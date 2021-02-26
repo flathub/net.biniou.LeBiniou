@@ -124,13 +124,6 @@ modules:
 #        branch: master
   - name: lebiniou
     buildsystem: autotools
-    build-options:
-      env:
-        CPPFLAGS: -DFLATPAK_TEST
-    test-rule:
-    test-commands:
-      - lebiniou --version
-      - lebiniou --stats
     config-opts:
       - --enable-flatpak
     sources:
