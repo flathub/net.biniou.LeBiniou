@@ -31,30 +31,12 @@ modules:
       - type: archive
         url: https://ftp.wayne.edu/gnu/libmicrohttpd/libmicrohttpd-0.9.72.tar.gz
         sha256: 0ae825f8e0d7f41201fd44a0df1cf454c1cb0bc50fe9d59c26552260264c2ff8
-  - name: orcania
-    buildsystem: cmake
-    sources:
-      - type: archive
-        url: https://github.com/babelouest/orcania/archive/v2.1.1.tar.gz
-        sha256: 960074f6aa198e9db5440347d20cff8be3b82ee1c15ac7b23c0ac54a301a85cd
-  - name: yder
-    buildsystem: cmake
-    sources:
-      - type: archive
-        url: https://github.com/babelouest/yder/archive/v1.4.12.tar.gz
-        sha256: 59bed6df43c29bf1a0f85274369f7a8bc7dfe5e94be826139e8aa05eda3ba2e6
   - name: jansson
     buildsystem: cmake
     sources:
       - type: archive
         url: https://github.com/akheron/jansson/archive/v2.13.1.tar.gz
         sha256: f22901582138e3203959c9257cf83eba9929ac41d7be4a42557213a22ebcc7a0
-  - name: ulfius
-    buildsystem: cmake
-    sources:
-      - type: archive
-        url: https://github.com/babelouest/ulfius/archive/v2.7.1.tar.gz
-        sha256: d5dfb90ac16fe9d8ce70fe6b23e43102d5208d4f0174196d3ef183d950d3a57b
   - name: imagemagick
     buildsystem: autotools
     config-opts:
@@ -89,6 +71,14 @@ modules:
     build-commands:
       - ./waf configure --prefix=$FLATPAK_DEST
       - ./waf install
+  - name: htmlmin
+    buildsystem: simple
+    build-commands:
+      - pip3 install --prefix=/app --no-deps .
+    sources:
+      - type: archive
+        url: https://files.pythonhosted.org/packages/b3/e7/fcd59e12169de19f0131ff2812077f964c6b960e7c09804d30a7bf2ab461/htmlmin-0.1.12.tar.gz
+        sha256: 50c1ef4630374a5d723900096a961cff426dff46b48f34d194a81bbe14eca178
   - name: node-modules
     build-options:
       env:
@@ -105,17 +95,30 @@ modules:
         # Produced by
         # ../flatpak-builder-tools/node/flatpak-node-generator.py npm package-lock.json
       - generated-sources.json
-  - name: htmlmin
-    buildsystem: simple
-    build-commands:
-      - pip3 install --prefix=/app --no-deps .
+  - name: orcania
+    buildsystem: cmake
     sources:
       - type: archive
-        url: https://files.pythonhosted.org/packages/b3/e7/fcd59e12169de19f0131ff2812077f964c6b960e7c09804d30a7bf2ab461/htmlmin-0.1.12.tar.gz
-        sha256: 50c1ef4630374a5d723900096a961cff426dff46b48f34d194a81bbe14eca178
+        url: https://github.com/babelouest/orcania/archive/v2.2.0.tar.gz
+        sha256: 2a46460c6d93e5b8dd97db520edc1e9b3297577fdd8c485b2b6ebf315ceab6f0
+  - name: yder
+    buildsystem: cmake
+    config-opts:
+      - -DDOWNLOAD_DEPENDENCIES=off
+    sources:
+      - type: archive
+        url: https://github.com/babelouest/yder/archive/v1.4.13.tar.gz
+        sha256: ca7f094d182f9017bdc75f54eac87986122a64178256ad36442fbfafce22f6ce
+  - name: ulfius
+    buildsystem: cmake
+    config-opts:
+      - -DDOWNLOAD_DEPENDENCIES=off
+    sources:
+      - type: archive
+        url: https://github.com/babelouest/ulfius/archive/v2.7.2.tar.gz
+        sha256: 8d3456e85302d1218f83602f2166889d7e1a3d039fce579db7020d619f36c6e3
   - name: lebiniou-data
     buildsystem: autotools
-    run-tests: true
     config-opts:
       - --enable-flatpak
     sources:
@@ -130,5 +133,4 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        tag: version-3.55.0
-        commit: 55f1c060c78f5a63f05614bd233aa7da04ed623a
+        branch: version-3.56.0
