@@ -134,3 +134,4 @@ modules:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
         branch: version-3.56.0
+        commit: c16f43d2958fc79348ac6a687fb071e19c52a7b8
