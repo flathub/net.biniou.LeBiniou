@@ -124,6 +124,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou-data.git
+        branch: version-3.60.0
   - name: lebiniou
     buildsystem: autotools
     config-opts:
