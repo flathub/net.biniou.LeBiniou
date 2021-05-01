@@ -116,7 +116,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.3-beta.tar.gz
-        sha256: e94cc68c1a59123383c277916818859ba991a1d859948437f7ca07f4002931bb
+        sha256: 9381dc5949449e62ceacbe776af09d560b3a7e3e2bb69cad60d9cb85bc0eb702
   - name: lebiniou-data
     buildsystem: autotools
     config-opts:
@@ -124,6 +124,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou-data.git
+        tag: version-3.56.0
+        commit: 21335bcfa4bce4325e28be06380d4b268e51a445
   - name: lebiniou
     buildsystem: autotools
     config-opts:
@@ -132,4 +134,5 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        branch: version-3.56.0
+        tag: version-3.56.0
+        commit: 95c068842c9147b10f49233a095dc1a90984499f
