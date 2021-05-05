@@ -129,9 +129,7 @@ modules:
     buildsystem: autotools
     config-opts:
       - --enable-flatpak
-    no-parallel-make: true
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        tag: version-3.56.0
-        commit: 95c068842c9147b10f49233a095dc1a90984499f
+        branch: dev-3.60
