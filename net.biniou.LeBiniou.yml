@@ -125,7 +125,7 @@ modules:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou-data.git
         branch: version-3.60.0
-        commit: a88a597a17d334710596fffe6a16de0698ad7fbe
+        commit: a113081530436eae1f5d500072e4e89a2b402682
   - name: lebiniou
     buildsystem: autotools
     config-opts:
