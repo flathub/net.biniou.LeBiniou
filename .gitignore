@@ -1,6 +1,7 @@
 *~
 .flatpak-builder/
 build-dir/
+data.sh
 install.sh
 run.sh
 flatpak-node-generator.py

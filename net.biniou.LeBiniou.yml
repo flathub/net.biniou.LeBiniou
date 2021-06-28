@@ -99,24 +99,24 @@ modules:
     buildsystem: cmake
     sources:
       - type: archive
-        url: https://github.com/babelouest/orcania/archive/v2.2.0.tar.gz
-        sha256: 2a46460c6d93e5b8dd97db520edc1e9b3297577fdd8c485b2b6ebf315ceab6f0
+        url: https://github.com/babelouest/orcania/archive/v2.2.1.tar.gz
+        sha256: a9f16856aa311b8926cba2075d5245e94f30436f8a762a7e897ee7c8d335c59e
   - name: yder
     buildsystem: cmake
     config-opts:
       - -DDOWNLOAD_DEPENDENCIES=off
     sources:
       - type: archive
-        url: https://github.com/babelouest/yder/archive/v1.4.13.tar.gz
-        sha256: ca7f094d182f9017bdc75f54eac87986122a64178256ad36442fbfafce22f6ce
+        url: https://github.com/babelouest/yder/archive/v1.4.14.tar.gz
+        sha256: 20b38969abe32022d938c4078fc137fafc8613cae8890efc97a754a6dee07e1f
   - name: ulfius
     buildsystem: cmake
     config-opts:
       - -DDOWNLOAD_DEPENDENCIES=off
     sources:
       - type: archive
-        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.3-beta.tar.gz
-        sha256: 9381dc5949449e62ceacbe776af09d560b3a7e3e2bb69cad60d9cb85bc0eb702
+        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.3.tar.gz
+        sha256: a20f575b3e81924c4ddb72c4ccdced134b5756a86b017f4a38b51608610628c5
   - name: lebiniou-data
     buildsystem: autotools
     config-opts:
@@ -124,15 +124,12 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou-data.git
-        tag: version-3.56.0
-        commit: 21335bcfa4bce4325e28be06380d4b268e51a445
+        tag: version-3.60.0
   - name: lebiniou
     buildsystem: autotools
     config-opts:
       - --enable-flatpak
-    no-parallel-make: true
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        tag: version-3.56.0
-        commit: 95c068842c9147b10f49233a095dc1a90984499f
+        tag: version-3.60.0
