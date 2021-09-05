@@ -124,7 +124,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou-data.git
-        tag: version-3.61.1
+        branch: version-3.62
   - name: lebiniou
     buildsystem: autotools
     config-opts:
@@ -132,4 +132,4 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        tag: version-3.61.2
+        branch: dev-remove_web_ui
