@@ -117,8 +117,8 @@ modules:
       - -DDOWNLOAD_DEPENDENCIES=off
     sources:
       - type: archive
-        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.4.tar.gz
-        sha256: 03fbe1956068dff0247e24524981beb84bc600c819cdb7b41a86f4472ca836bb
+        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.5.tar.gz
+        sha256: 222e2b34ca7d9fd15495fff26ea1300303a66bd9189a8fb4004a89164fd4b289
   - name: lebiniou-data
     buildsystem: autotools
     config-opts:
@@ -126,7 +126,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou-data.git
-        tag: version-3.62.0
+        tag: version-3.63.0
   - name: lebiniou
     buildsystem: autotools
     config-opts:
@@ -134,4 +134,4 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
-        tag: version-3.62.0
+        tag: version-3.63.0
