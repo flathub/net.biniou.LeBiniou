@@ -93,8 +93,8 @@ modules:
       - -DDOWNLOAD_DEPENDENCIES=off
     sources:
       - type: archive
-        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.6.tar.gz
-        sha256: 8dcc20104a68abda31a30942e3d6b2368e59a86b88a24d52909a18581aacf66d
+        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.7.tar.gz
+        sha256: e39bfac8e6ef3ed1b2633d4d617f82549ed88b0f2bb0bc85928d1189c4d2e0de
   - name: lebiniou-data
     buildsystem: autotools
     config-opts:
