@@ -77,8 +77,8 @@ modules:
     buildsystem: cmake
     sources:
       - type: archive
-        url: https://github.com/babelouest/orcania/archive/v2.2.2.tar.gz
-        sha256: 967f60064321e5a16faa44060d55b2c5392f92708c961b3e4ed617e837da4bff
+        url: https://github.com/babelouest/orcania/archive/v2.3.0.tar.gz
+        sha256: b1b5550523164eca0f59099e843177684c5017c6088284123880cffd4c6dbbde
   - name: yder
     buildsystem: cmake
     config-opts:
@@ -87,8 +87,8 @@ modules:
       - -DINSTALL_HEADER=off
     sources:
       - type: archive
-        url: https://github.com/babelouest/yder/archive/v1.4.15.tar.gz
-        sha256: 5535618d9c96f16271e540d6316cd2910dea8c2519ff2aa6dc12fc8fee15a020
+        url: https://github.com/babelouest/yder/archive/v1.4.17.tar.gz
+        sha256: fb006e4e2a3e2f992985776808da92cbd87ed386dd3125984025036fdc10bfdf
   - name: ulfius
     buildsystem: cmake
     config-opts:
@@ -98,8 +98,8 @@ modules:
       - -DBUILD_UWSC=off
     sources:
       - type: archive
-        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.9.tar.gz
-        sha256: 62ccea70702643ab0374a18aac66362288c8d95e66c17ad3ad37bdf6e36ed40a
+        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.10.tar.gz
+        sha256: 616c5df99584071461a1285dd7155883f7d2b94abf0931038feeebd3da3a6def
   - name: lebiniou-data
     buildsystem: autotools
     config-opts:
