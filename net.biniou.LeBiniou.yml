@@ -1,6 +1,6 @@
 app-id: net.biniou.LeBiniou
 runtime: org.freedesktop.Platform
-runtime-version: '20.08'
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 command: lebiniou
 finish-args:
@@ -32,7 +32,9 @@ modules:
         url: https://ftp.wayne.edu/gnu/libmicrohttpd/libmicrohttpd-0.9.72.tar.gz
         sha256: 0ae825f8e0d7f41201fd44a0df1cf454c1cb0bc50fe9d59c26552260264c2ff8
   - name: jansson
-    buildsystem: cmake
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DJANSSON_BUILD_DOCS=OFF
     sources:
       - type: archive
         url: https://github.com/akheron/jansson/archive/v2.13.1.tar.gz
@@ -74,13 +76,13 @@ modules:
       - ./waf configure --prefix=$FLATPAK_DEST
       - ./waf install
   - name: orcania
-    buildsystem: cmake
+    buildsystem: cmake-ninja
     sources:
       - type: archive
         url: https://github.com/babelouest/orcania/archive/v2.3.0.tar.gz
         sha256: b1b5550523164eca0f59099e843177684c5017c6088284123880cffd4c6dbbde
   - name: yder
-    buildsystem: cmake
+    buildsystem: cmake-ninja
     config-opts:
       - -DDOWNLOAD_DEPENDENCIES=off
       - -DWITH_JOURNALD=off
@@ -90,10 +92,9 @@ modules:
         url: https://github.com/babelouest/yder/archive/v1.4.17.tar.gz
         sha256: fb006e4e2a3e2f992985776808da92cbd87ed386dd3125984025036fdc10bfdf
   - name: ulfius
-    buildsystem: cmake
+    buildsystem: cmake-ninja
     config-opts:
       - -DDOWNLOAD_DEPENDENCIES=off
-      - -DWITH_JOURNALD=off
       - -DWITH_YDER=off
       - -DBUILD_UWSC=off
     sources:
