@@ -1,4 +1,0 @@
-{
-    "publish-delay-hours": 1,
-    "only-arches": ["x86_64", "i386", "arm", "aarch64"]
-}
