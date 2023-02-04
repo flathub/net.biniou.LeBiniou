@@ -58,8 +58,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/babelouest/orcania/archive/v2.3.1.tar.gz
-        sha256: bbf08d563528b8ab88dd4b0e67aeb4e7c4fc9f19dcd1a0346b773cf492f7612b
+        url: https://github.com/babelouest/orcania/archive/v2.3.2.tar.gz
+        sha256: fcd93c554afeb694a36ac3c8bd1fa767028b373cb0b94a9396124c4e36d24038
   - name: yder
     buildsystem: cmake-ninja
     config-opts:
@@ -68,8 +68,8 @@ modules:
       - -DINSTALL_HEADER=off
     sources:
       - type: archive
-        url: https://github.com/babelouest/yder/archive/v1.4.18.tar.gz
-        sha256: b69cc81f6630f66468595d151446c00c90abed058f03f82e151591b8598a7598
+        url: https://github.com/babelouest/yder/archive/v1.4.19.tar.gz
+        sha256: 9d566dae01849ed5c76f3143f20ba0bf0cbeb59eaf68d5296b22a26c9b279cc0
   - name: ulfius
     buildsystem: cmake-ninja
     config-opts:
@@ -78,8 +78,8 @@ modules:
       - -DBUILD_UWSC=off
     sources:
       - type: archive
-        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.11.tar.gz
-        sha256: 6f6fadf2fed0516f6f2203b9e5afcd9c6dfeee0cb48a27f659d6c4e21d1b456f
+        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.12.tar.gz
+        sha256: 20a359eeb30f1807ef68e4b6329fca5a06167eef1f0faaae3d2e0e8e4406bd70
   - name: lebiniou-data
     buildsystem: autotools
     config-opts:
