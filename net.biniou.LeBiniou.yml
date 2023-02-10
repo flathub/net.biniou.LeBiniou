@@ -78,8 +78,8 @@ modules:
       - -DBUILD_UWSC=off
     sources:
       - type: archive
-        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.12.tar.gz
-        sha256: 20a359eeb30f1807ef68e4b6329fca5a06167eef1f0faaae3d2e0e8e4406bd70
+        url: https://github.com/babelouest/ulfius/archive/refs/tags/v2.7.13.tar.gz
+        sha256: b1679bc0885acedff66abad84b51f492497ab1114d6911d07d2cf7eb77ccadce
   - name: lebiniou-data
     buildsystem: autotools
     config-opts:
