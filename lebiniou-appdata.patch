@@ -1,0 +1,13 @@
+diff --git a/net.biniou.LeBiniou.appdata.xml b/net.biniou.LeBiniou.appdata.xml
+index d7cdce1..21050c3 100644
+--- a/net.biniou.LeBiniou.appdata.xml
++++ b/net.biniou.LeBiniou.appdata.xml
+@@ -27,7 +27,7 @@
+   </description>
+   <launchable type="desktop-id">net.biniou.LeBiniou.desktop</launchable>
+   <screenshots>
+-    <screenshot>
++    <screenshot type="default">
+       <image>https://dl.biniou.net/net.biniou.LeBiniou/screenshot_20210802_201005.png</image>
+     </screenshot>
+     <screenshot>

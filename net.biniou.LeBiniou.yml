@@ -1,6 +1,6 @@
 app-id: net.biniou.LeBiniou
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: lebiniou
 finish-args:
@@ -21,9 +21,9 @@ cleanup:
   - /include
   - /lib/pkgconfig
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node16
+  - org.freedesktop.Sdk.Extension.node20
 build-options:
-  append-path: /usr/lib/sdk/node16/bin
+  append-path: /usr/lib/sdk/node20/bin
 modules:
   - name: microhttpd
     buildsystem: autotools
@@ -52,8 +52,8 @@ modules:
       - --without-xml
     sources:
       - type: archive
-        url: https://github.com/ImageMagick/ImageMagick6/archive/6.9.11-51.tar.gz
-        sha256: 06c4363486e1053e69bb3fa211374bdaed4baa678ca8ccd1f38731f0da2d3497
+        url: https://github.com/ImageMagick/ImageMagick6/archive/refs/tags/6.9.13-16.tar.gz
+        sha256: ab04edc1b0b6ee39fd7f568125c1b1ec12bbdb41f97a6888f5cde8622610ae30
   - name: orcania
     buildsystem: cmake-ninja
     sources:
@@ -90,9 +90,13 @@ modules:
         tag: version-3.66.0
   - name: lebiniou
     buildsystem: autotools
+    build-options:
+      cflags: -Wno-error
     config-opts:
       - --enable-flatpak
     sources:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
         tag: version-3.66.0
+      - type: patch
+        path: lebiniou-appdata.patch
