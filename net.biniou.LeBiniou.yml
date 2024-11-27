@@ -98,3 +98,5 @@ modules:
       - type: git
         url: https://gitlab.com/lebiniou/lebiniou.git
         tag: version-3.67.0
+      - type: patch
+        path: lebiniou-appdata.patch
