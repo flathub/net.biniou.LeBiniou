@@ -8,7 +8,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=pulseaudio
   - --socket=wayland
-  - --filesystem=xdg-run/pipewire-0
+  - --filesystem=xdg-run/pipewire-0:ro
   # used to send anonymous usage statistics
   - --share=network
   # users can put configuration and/or data files anywhere
